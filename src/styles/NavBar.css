@@ -4,6 +4,8 @@ nav{
   gap: 1rem;
   padding: 1rem;
   background-color: #F8F9FA;
+  position: fixed;
+  width: 100%;
 }
 
 #CV{
@@ -17,11 +19,6 @@ nav{
 
 .navbar__logo:hover, .navbar__list-link:hover{color: #1E90FF;}
 
-.navbar__logo::selection, .navbar__list-link::selection, .cv__button::selection{
-  background-color: #1E90FF;
-  color: #F8F9FA;
-}
-
 a{text-decoration: none;}
 
 .navbar__logo, .navbar__list-link{
@@ -31,7 +28,7 @@ a{text-decoration: none;}
 }
 
 .navbar__list-container{
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1rem;
   list-style-type: none;
@@ -39,6 +36,7 @@ a{text-decoration: none;}
 
 @media (min-width: 1024px) {
   nav{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +44,7 @@ a{text-decoration: none;}
   }
 
   .navbar__list-container{
+    display: flex;
     flex-direction: row;
     gap: 2rem
   }

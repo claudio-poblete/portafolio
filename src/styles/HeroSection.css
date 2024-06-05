@@ -1,0 +1,91 @@
+.hero__section-container, .hero__section-main, .section__main-titles{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.hero__section-container, .hero__section-main, .section__main-buttons { gap: 1rem; }
+
+.section__main-titles{ gap: 0.2rem; }
+
+.hero__section-container{ padding: 10rem 1rem; }
+
+.section__main-titles h2, h3, h4 {
+  letter-spacing: 2px;
+  color: #333333;
+}
+
+.section__main-titles h4{
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #2E9AFE;
+}
+
+.section__main-titles h2{ font-size: 2.1rem; }
+
+.section__main-titles h3{ font-size: 1.3rem;}
+
+h2 span, h3 span{ color: #1E90FF; }
+
+.section__main-buttons{ display: flex;}
+
+.primary__button, .secondary__button{
+  padding: 0.5rem 1.0rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: .4s ease-in;
+}
+
+.primary__button{
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.secondary__button{
+  border: 1px solid #1E90FF;
+  color: #333333;
+}
+
+.primary__button:hover{
+  background-color: #5d5d5d;
+  border: none;
+}
+
+.secondary__button:hover{
+  background-color: #1E90FF;
+  color: #FFFFFF;
+}
+
+.hero__section-img{ display: none; }
+
+@media (min-width: 1024px){
+  .hero__section-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .section__main-titles h4{ font-size: 2rem; }
+  .section__main-titles h2{ font-size: 4.1rem; }
+  .section__main-titles h3{ font-size: 2.6rem; }
+
+  .primary__button, .secondary__button{ padding: 0.5rem 4rem; }
+
+  .hero__section-img{
+    display: flex;
+    width: 500px;
+    height: 300px;
+  }
+
+  .hero__section-img img{
+    border-radius: 1rem;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .4s ease-in;
+  }
+
+  .hero__section-img img:hover{opacity: 1;}
+
+}

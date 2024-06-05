@@ -10,3 +10,10 @@
 body{
   font-family: 'Monserrat', sans-serif;
 }
+
+*::selection{
+  background-color: #1E90FF;
+  color: #F8F9FA;
+}
+
+a{ text-decoration: none;}
