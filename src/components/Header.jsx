@@ -1,6 +1,6 @@
-import NavBar from './NavBar'
-import HeroSection from './HeroSection'
-import '../styles/Header.css'
+import NavBar from './Header_Components/NavBar'
+import HeroSection from './Header_Components/HeroSection'
+import '../styles/Header-Styles/Header.css'
 
 const Header = () => {
   return (

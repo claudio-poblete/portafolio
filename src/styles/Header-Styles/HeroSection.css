@@ -8,9 +8,9 @@
 
 .section__main-titles{ gap: 0.2rem; }
 
-.hero__section-container{ padding: 10rem 1rem; }
+.hero__section-container{ padding: 12rem 1rem; }
 
-.section__main-titles h2, h3, h4 {
+.section__main-titles h2, .section__main-titles h3, .section__main-titles h4 {
   letter-spacing: 2px;
   color: #333333;
 }
@@ -86,6 +86,8 @@ h2 span, h3 span{ color: #1E90FF; }
     transition: .4s ease-in;
   }
 
-  .hero__section-img img:hover{opacity: 1;}
+  .hero__section-img img:hover{
+    opacity: 1;
+  }
 
 }

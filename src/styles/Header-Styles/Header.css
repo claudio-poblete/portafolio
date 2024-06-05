@@ -1,0 +1,11 @@
+header{
+  background-color: #F8F9FA;
+  padding-bottom: 5rem ;
+}
+
+
+@media (min-width: 1024px){
+  header{
+    min-height: 100dvh;
+  }
+}

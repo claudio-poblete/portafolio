@@ -1,5 +1,5 @@
-import imagenEjemplo from '../assets/images/ejemplo-imagen.jpg'
-import '../styles/HeroSection.css'
+import imagenEjemplo from '../../assets/images/ejemplo-imagen.jpg'
+import '../../styles/Header-Styles/HeroSection.css'
 
 const HeroSection = () => {
   return (

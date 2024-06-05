@@ -1,0 +1,31 @@
+.about__main-container ,.about__info-section, .about__section-container, .about__info-para{
+  display: flex;
+  flex-direction: column;
+  color: #333333 ;
+}
+
+.about__main-container{
+  gap: 4rem;
+  background-color: #F2F2F2;
+  padding: 10rem 1rem;
+}
+
+.about__info-section, .about__info-para{
+  gap: 1rem;
+}
+
+.about__section-title h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #1E90FF;
+  letter-spacing: 2px;
+}
+
+.about__info-para p{
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.about__section-container{
+  gap: 2rem;
+}
