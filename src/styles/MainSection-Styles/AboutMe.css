@@ -1,4 +1,4 @@
-.about__main-container ,.about__info-section, .about__section-container, .about__info-para{
+.about__main-container ,.about__info-section, .about__section-container, .about__info-para, .about__skills-container{
   display: flex;
   flex-direction: column;
   color: #333333 ;
@@ -26,6 +26,10 @@
   letter-spacing: 0.5px;
 }
 
-.about__section-container{
+.about__section-container, .about__skills-section ,.about__skills-container{
   gap: 2rem;
+}
+
+.about__skills-container{
+  padding-top: 1rem;
 }

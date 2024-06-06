@@ -1,0 +1,30 @@
+.skills__tech-container, .skills__tool-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.icons{
+  color: #1E90FF;
+}
+
+.skill__tech:hover, .skill__tool:hover{
+  opacity: 0.8;
+}
+
+
+.skill__tech, .skill__tool{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+  transition: .4s ease-out;
+}
+
+
+.skill__tech p, .skill__tool p{
+  font-weight: 700;
+}

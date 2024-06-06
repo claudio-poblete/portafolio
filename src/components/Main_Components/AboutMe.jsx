@@ -1,8 +1,5 @@
 import '../../styles/MainSection-Styles/AboutMe.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faHtml5, faCss3, faReact, faGitSquare, faSass } from '@fortawesome/free-brands-svg-icons'
-import { faJsSquare } from '@fortawesome/free-brands-svg-icons/faJsSquare'
-import { faDatabase, faGears, faLaptopCode, faMobileScreenButton, faTerminal } from '@fortawesome/free-solid-svg-icons'
+import TechIcons from './TechIcons'
 
 export const AboutMe = () => {
   return (
@@ -26,58 +23,7 @@ export const AboutMe = () => {
             <h3>Mis Habilidades / Tecnologías</h3>
           </div>
           <div className='about__skills-container'>
-            <div className='skills__tech-container'>
-              <div className='skill__tech'>
-                <FontAwesomeIcon icon={faHtml5} size='4x' />
-                <p>HTML</p>
-              </div>
-              <div className='skill__tech'>
-                <FontAwesomeIcon icon={faCss3} size='4x' />
-                <p>CSS</p>
-              </div>
-              <div className='skill__tech'>
-                <FontAwesomeIcon icon={faJsSquare} size='4x' />
-                <p>JavaScript</p>
-              </div>
-              <div className='skill__tech'>
-                <FontAwesomeIcon icon={faReact} size='4x' />
-                <p>React</p>
-              </div>
-              <div className='skill__tech'>
-                <FontAwesomeIcon icon={faDatabase} size='4x' />
-                <p>SQL / MySQL</p>
-              </div>
-              <div className='skill__tech'>
-                <FontAwesomeIcon icon={faGears} size='4x' />
-                <p>RESTful  Apis</p>
-              </div>
-            </div>
-            <div className='skills__tool-container'>
-              <div className='skill__tool'>
-                <FontAwesomeIcon icon={faMobileScreenButton} size='4x' />
-                <p>Diseño Reponsivo</p>
-              </div>
-              <div className='skill__tool'>
-                <FontAwesomeIcon icon={faGithub} size='4x' />
-                <p>GitHub</p>
-              </div>
-              <div className='skill__tool'>
-                <FontAwesomeIcon icon={faLaptopCode} size='4x' />
-                <p>Visual Studio Code</p>
-              </div>
-              <div className='skill__tool'>
-                <FontAwesomeIcon icon={faGitSquare} size='4x' />
-                <p>Git</p>
-              </div>
-              <div className='skill__tool'>
-                <FontAwesomeIcon icon={faTerminal} size='4x' />
-                <p>Terminal de Comandos</p>
-              </div>
-              <div className='skill__tool'>
-                <FontAwesomeIcon icon={faSass} size='4x' />
-                <p>Sass</p>
-              </div>
-            </div>
+            <TechIcons />
           </div>
         </article>
       </div>

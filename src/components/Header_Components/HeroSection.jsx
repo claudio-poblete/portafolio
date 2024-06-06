@@ -1,4 +1,4 @@
-import imagenEjemplo from '../../assets/images/ejemplo-imagen.jpg'
+import miImagen from '../../assets/images/yo.jpg'
 import '../../styles/Header-Styles/HeroSection.css'
 
 const HeroSection = () => {
@@ -16,7 +16,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className='hero__section-img'>
-        <img src={imagenEjemplo} alt='Imagen-Ejemplo' />
+        <img src={miImagen} alt='Imagen-Ejemplo' />
       </div>
     </section>
   )

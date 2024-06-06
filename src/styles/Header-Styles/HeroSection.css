@@ -75,8 +75,6 @@ h2 span, h3 span{ color: #1E90FF; }
 
   .hero__section-img{
     display: flex;
-    width: 500px;
-    height: 300px;
   }
 
   .hero__section-img img{
@@ -84,6 +82,9 @@ h2 span, h3 span{ color: #1E90FF; }
     opacity: 0.8;
     cursor: pointer;
     transition: .4s ease-in;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
   }
 
   .hero__section-img img:hover{
