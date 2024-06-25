@@ -8,7 +8,7 @@
 
 .section__main-titles{ gap: 0.2rem; }
 
-.hero__section-container{ padding: 12rem 1rem; }
+.hero__section-container{ padding: 10rem 1rem; }
 
 .section__main-titles h2, .section__main-titles h3, .section__main-titles h4 {
   letter-spacing: 2px;

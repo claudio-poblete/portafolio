@@ -1,5 +1,6 @@
-import miImagen from '../../assets/images/yo.jpg'
-import '../../styles/Header-Styles/HeroSection.css'
+import miImagen from '../assets/images/yo.jpg'
+import '../styles/HeroSection/herosection.css'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
   return (
@@ -11,8 +12,12 @@ const HeroSection = () => {
           <h3><span>Desarollador</span> Full Stack</h3>
         </div>
         <div className='section__main-buttons'>
-          <a href='#project' className='primary__button'>Mis Proyectos</a>
-          <a href='#contact' className='secondary__button'>Contacto</a>
+          <Link to='/project' className='primary__button'>
+            Mis Proyectos
+          </Link>
+          <Link to='/contact' className='secondary__button'>
+            Contacto
+          </Link>
         </div>
       </div>
       <div className='hero__section-img'>

@@ -21,6 +21,7 @@ nav{
 .navbar__logo{
   cursor: pointer;
   letter-spacing: 1px;
+  font-size: 1.3rem;
 }
 
 .navbar__logo:hover, .navbar__list-link:hover{color: #1E90FF;}
@@ -53,6 +54,14 @@ a{text-decoration: none;}
     display: flex;
     flex-direction: row;
     gap: 2rem
+  }
+
+  .navbar__logo{
+    font-size: 1.5rem;
+  }
+
+  .navbar__list-link{
+    font-size: 1.3rem;
   }
 }
 

@@ -1,11 +1,22 @@
-import MainSection from './components/MainSection'
-import Header from './components/Header'
+import { Routes, Route } from 'react-router-dom'
+import Header from './views/Header'
+import HeroSection from './views/HeroSection'
+import AboutMe from './views/AboutMe'
 
 function App () {
   return (
     <>
       <Header />
-      <MainSection />
+      <Routes>
+        <Route
+          path='/'
+          element={<HeroSection />}
+        />
+        <Route
+          path='/aboutme'
+          element={<AboutMe />}
+        />
+      </Routes>
     </>
   )
 }

@@ -1,9 +1,9 @@
-import '../../styles/MainSection-Styles/AboutMe.css'
-import TechIcons from './TechIcons'
+import '../styles/MainSection-Styles/AboutMe.css'
+import TechIcons from '../components/Main_Components/TechIcons'
 
 export const AboutMe = () => {
   return (
-    <section id='aboutme' className='about__main-container'>
+    <section className='about__main-container'>
       <div className='about__section-title'>
         <h2>Sobre Mi</h2>
       </div>

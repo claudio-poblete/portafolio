@@ -1,4 +1,8 @@
-.about__main-container ,.about__info-section, .about__section-container, .about__info-para, .about__skills-container{
+.about__main-container ,
+.about__info-section,
+.about__section-container,
+.about__info-para,
+.about__skills-container{
   display: flex;
   flex-direction: column;
   color: #333333 ;
@@ -7,7 +11,7 @@
 .about__main-container{
   gap: 4rem;
   background-color: #F2F2F2;
-  padding: 10rem 1rem;
+  padding: 8rem 1rem;
 }
 
 .about__info-section, .about__info-para{
@@ -27,9 +31,38 @@
 }
 
 .about__section-container, .about__skills-section ,.about__skills-container{
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .about__skills-container{
   padding-top: 1rem;
+}
+
+@media (min-width: 1024px){
+  .about__section-container{
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .about__info-para{
+    width: 650px;
+  }
+  .about__skills-section{
+    width: 650px;
+  }
+
+  .about__info-para p{
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+
+  .about__section-title h2{
+    font-size: 3rem;
+  }
+
+  .about__info-title,
+  .about__skills-title{
+    font-size: 1.2rem;
+  }
 }

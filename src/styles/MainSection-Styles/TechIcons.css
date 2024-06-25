@@ -28,3 +28,9 @@
 .skill__tech p, .skill__tool p{
   font-weight: 700;
 }
+
+@media (min-width: 1024px){
+  .icons{
+    font-size: 4.5rem;
+  }
+}
