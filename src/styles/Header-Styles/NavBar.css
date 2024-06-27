@@ -41,7 +41,7 @@ a{text-decoration: none;}
   list-style-type: none;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   nav{
     display: flex;
     flex-direction: row;

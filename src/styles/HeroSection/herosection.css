@@ -1,16 +1,24 @@
-.hero__section-container, .hero__section-main, .section__main-titles{
+.hero__section-container,
+.hero__section-main,
+.section__main-titles{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.hero__section-container, .hero__section-main, .section__main-buttons { gap: 1rem; }
+.hero__section-container,
+.hero__section-main,
+.section__main-buttons {
+  gap: 1rem;
+}
 
 .section__main-titles{ gap: 0.2rem; }
 
 .hero__section-container{ padding: 10rem 1rem; }
 
-.section__main-titles h2, .section__main-titles h3, .section__main-titles h4 {
+.section__main-titles h2,
+.section__main-titles h3,
+.section__main-titles h4 {
   letter-spacing: 2px;
   color: #333333;
 }
@@ -28,10 +36,12 @@
 
 h2 span, h3 span{ color: #1E90FF; }
 
-.section__main-buttons{ display: flex;}
+.section__main-buttons{
+  display: flex
+}
 
 .primary__button, .secondary__button{
-  padding: 0.5rem 1.0rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 0.5rem;
   border: none;
   transition: .4s ease-in;
@@ -59,7 +69,12 @@ h2 span, h3 span{ color: #1E90FF; }
 
 .hero__section-img{ display: none; }
 
-@media (min-width: 1024px){
+@media (width >= 375px ){
+  .section__main-titles h2{ font-size: 2.5rem; }
+  .section__main-titles h3{ font-size: 1.5rem;}
+}
+
+@media (width >= 768px){
   .hero__section-container{
     flex-direction: row;
     justify-content: center;
@@ -72,7 +87,9 @@ h2 span, h3 span{ color: #1E90FF; }
   .section__main-titles h3{ font-size: 2.6rem; }
 
   .primary__button, .secondary__button{ padding: 0.5rem 4rem; }
+}
 
+@media (width >= 1440px){
   .hero__section-img{
     display: flex;
   }

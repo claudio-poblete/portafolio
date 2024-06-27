@@ -2,10 +2,19 @@
 .about__info-section,
 .about__section-container,
 .about__info-para,
-.about__skills-container{
+.about__skills-container,
+.about__skills-section,
+.about__education-container,
+.education__container,
+.education,
+.gap-1{
   display: flex;
   flex-direction: column;
   color: #333333 ;
+}
+
+.gap-1{
+  gap: 1rem;
 }
 
 .about__main-container{
@@ -14,37 +23,68 @@
   padding: 8rem 1rem;
 }
 
-.about__info-section, .about__info-para{
+.about__info-section,
+.about__info-para,
+.about__skills-container,
+.about__education-container,
+.education__container{
   gap: 1rem;
 }
 
 .about__section-title h2{
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #1E90FF;
   letter-spacing: 2px;
 }
 
-.about__info-para p{
+.about__title{
+  font-size: 1.5rem;
+}
+
+.about__info-para p,
+.education p{
   line-height: 1.3;
   letter-spacing: 0.5px;
 }
 
-.about__section-container, .about__skills-section ,.about__skills-container{
-  gap: 1rem;
+.about__section-container,
+.about__skills-section{
+  gap: 3rem;
 }
 
 .about__skills-container{
   padding-top: 1rem;
 }
 
-@media (min-width: 1024px){
+h4{
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #1E90FF;
+}
+
+.education{
+  gap: 0.3rem;
+}
+
+.about__img img{
+  display: none;
+}
+
+@media (width >= 1024px){
   .about__section-container{
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
   }
+  .about__info-para p,
+  .education p{
+    width: 450px;
+  }
+}
 
+@media (width >= 1440px){
   .about__info-para{
     width: 650px;
   }
@@ -52,17 +92,45 @@
     width: 650px;
   }
 
-  .about__info-para p{
+  .about__info-section{
+    gap: 3rem;
+  }
+
+  .about__info-para p,
+  .education p{
     line-height: 1.5;
     letter-spacing: 1px;
+    font-size: 1.02rem;
+    width: auto;
   }
 
   .about__section-title h2{
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
-  .about__info-title,
-  .about__skills-title{
-    font-size: 1.2rem;
+  .about__title{
+    font-size: 1.7rem;
+  }
+
+  h4{
+    font-size: 1.3rem;
+  }
+
+  h5{
+    font-size: 1.05rem;
+  }
+  .about__img img{
+    display: flex;
+    border-radius: 1rem;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .4s ease-in;
+    width: 650px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .about__img img:hover{
+    opacity: 1;
   }
 }
