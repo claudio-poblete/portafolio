@@ -1,7 +1,16 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import '../assets/styles/Navbar.css'
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
+
   return (
     <nav className='navbar'>
       <div className='logo-container'>
@@ -9,29 +18,28 @@ const Navbar = () => {
           Claudio Poblete
         </Link>
       </div>
-      <ul className='links-container'>
+      <button
+        className='hamburger-menu'
+        onClick={toggleMenu}
+        aria-label='Abrir o cerrar el menú de navegación'
+      >
+        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
+      </button>
+      <ul className={`links-container ${menuOpen ? 'show-menu' : ''}`}>
         <li>
-          <Link to='/' className='links' aria-label='Ir a la página de inicio'>
-            Inicio
-          </Link>
+          <Link to='/' className='links'>Inicio</Link>
         </li>
         <li>
-          <Link to='/about' className='links' aria-label='Ir a la sección sobre mí'>
-            Sobre Mi
-          </Link>
+          <Link to='/about' className='links'>Sobre Mi</Link>
         </li>
         <li>
-          <Link to='/projects' className='links' aria-label='Ver mis proyectos'>
-            Mis Proyectos
-          </Link>
+          <Link to='/projects' className='links'>Mis Proyectos</Link>
         </li>
         <li>
-          <Link to='/contact' className='links' aria-label='Ir a la sección de contacto'>
-            Contáctame
-          </Link>
+          <Link to='/contact' className='links'>Contáctame</Link>
         </li>
-        <li>
-          <a href='./docs/cv.pdf' className='link-cv' target='_blank' rel='noopener noreferrer' aria-label='Descargar mi CV'>
+        <li className='cv-button-container'>
+          <a href='/docs/CV Claudio Poblete - Dev Fullstack.pdf' className='link-cv' target='_blank' rel='noopener noreferrer'>
             Mi CV
           </a>
         </li>

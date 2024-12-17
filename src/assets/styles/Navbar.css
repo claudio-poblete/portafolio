@@ -1,45 +1,115 @@
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1.5rem 3rem;
+  padding: 1rem;
+  gap: 1rem;
   background-color: #F5F5F5;
 }
 
-.logo, .links, .link-cv{
+.logo,
+.links,
+.link-cv {
   text-decoration: none;
   color: #333333;
   font-weight: 500;
 }
 
-.logo{
+.logo {
   font-size: 1.5rem;
-  letter-spacing: 4px;
 }
 
-.logo:hover, .links:hover{
+.logo:hover,
+.links:hover {
   color: #777777;
-  transition: ease-in .4s;
+  transition: ease-in 0.4s;
 }
 
-.links-container{
-  display: flex;
+.links-container {
+  display: none;
+  flex-direction: column;
   gap: 1.5rem;
+  align-items: center;
+  width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
-li{
+.links-container.show-menu {
+  display: flex;
+}
+
+li {
   list-style-type: none;
 }
 
-.links{
+.links {
   font-size: 1.3rem;
-  letter-spacing: 1.5px;
 }
 
-.link-cv{
+.cv-button-container {
+  width: 100%;
+  text-align: center;
+}
+
+.link-cv {
   background-color: #333333;
-  padding: 1rem 3rem;
+  padding: 0.8rem 5rem;
   color: #F5F5F5;
   border-radius: 1rem;
+  width: 100%;
 }
+
+.link-cv:hover {
+  background-color: #777777;
+  transition: ease-in 0.4s;
+}
+
+.hamburger-menu {
+  display: block;
+  background: none;
+  border: none;
+  color: #333333;
+  font-size: 1.8rem;
+  cursor: pointer;
+  align-self: center; /* Alineado verticalmente con el logo */
+  margin-left: auto;  /* Empuja el botón a la derecha */
+  position: relative; /* Añadido para mejorar la alineación */
+}
+
+.hamburger-menu:focus {
+  outline: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1.5rem 3rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .hamburger-menu {
+    display: none;
+    margin-left: none;
+  }
+
+  .cv-button-container {
+    all: unset;
+  }
+
+  .link-cv {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo,
+  .links {
+    letter-spacing: 1.5px;
+  }
+} 
