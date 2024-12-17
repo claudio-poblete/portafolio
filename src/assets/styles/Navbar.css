@@ -1,0 +1,45 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem 3rem;
+  background-color: #F5F5F5;
+}
+
+.logo, .links, .link-cv{
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+
+.logo{
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+
+.logo:hover, .links:hover{
+  color: #777777;
+  transition: ease-in .4s;
+}
+
+.links-container{
+  display: flex;
+  gap: 1.5rem;
+}
+
+li{
+  list-style-type: none;
+}
+
+.links{
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}
+
+.link-cv{
+  background-color: #333333;
+  padding: 1rem 3rem;
+  color: #F5F5F5;
+  border-radius: 1rem;
+}
