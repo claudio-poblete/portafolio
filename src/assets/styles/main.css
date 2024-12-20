@@ -6,6 +6,32 @@
   box-sizing: border-box;
 }
 
+*::selection{
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
 body{
   font-family: "Ubuntu", sans-serif;
 }
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+
+
+
+

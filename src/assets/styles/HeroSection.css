@@ -1,0 +1,142 @@
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 5rem;
+  gap: 2rem;
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hero-up-title{
+  font-size: 1.4rem;
+  color: #333333;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.hero-title{
+  font-size: 2.4rem;
+  color: #333333;
+}
+
+.hero-subtitle{
+  font-size: 1.6rem;
+  color: #333333;
+}
+
+span{
+  color: #777777;
+}
+
+.hero-title, .hero-subtitle{
+  font-weight: 700;
+}
+
+.hero-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.primary-button, .secondary-button{
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.primary-button{
+  background-color: #333333;
+  color: #FFFFFF;
+  border: none;
+}
+
+.secondary-button{
+  border: 1px solid #777777;
+  color: #333333;
+}
+
+.primary-button:hover{
+  opacity: 0.8;
+  transition: .4s;
+  border: none;
+}
+
+.secondary-button:hover{
+  background-color: #777777;
+  color: #FFFFFF;
+  transition: .4s;
+}
+
+.img-container{
+  padding: 0 2rem;
+}
+
+@media (min-width: 768px){
+  .hero-section{
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 6rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .hero-up-title{
+    font-size: 2rem;
+  }
+
+  .hero-title{
+    font-size: 3.4rem;
+  }
+
+  .hero-subtitle{
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1440px){
+  .hero-section{
+    padding-top: 8rem;
+    gap: 4rem;
+  }
+
+  .hero-up-title{
+    font-size: 3.4rem;
+  }
+
+  .hero-title{
+    font-size: 5.4rem;
+  }
+
+  .hero-subtitle{
+    font-size: 3.6em;
+  }
+
+  .hero-buttons{
+    flex-direction: row;
+  }
+
+  .primary-button, .secondary-button{
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+  }
+}
