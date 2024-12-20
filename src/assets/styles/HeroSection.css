@@ -87,9 +87,23 @@ span{
   transition: .4s;
 }
 
-.img-container{
-  padding: 0 2rem;
+.img-container {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
 }
+
+.img-container img {
+  display: none;
+  transition: filter 0.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.img-container img:hover {
+  filter: grayscale(0%);
+}
+
 
 @media (min-width: 768px){
   .hero-section{
@@ -97,25 +111,63 @@ span{
     justify-content: center;
     padding-top: 6rem;
   }
-}
 
-@media (min-width: 1024px){
   .hero-up-title{
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .hero-title{
-    font-size: 3.4rem;
+    font-size: 4.4rem;
   }
 
   .hero-subtitle{
+    font-size: 2.6rem;
+  }
+
+  .hero-buttons{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px){
+  .hero-section{
+    align-items: center;
+    padding: 6rem 4rem ;
+    gap: 2rem;
+  }
+
+  .hero-up-title{
     font-size: 2.2rem;
+  }
+
+  .hero-title{
+    font-size: 3.9rem;
+  }
+
+  .hero-subtitle{
+    font-size: 2.5rem;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 300px;
+    max-height: 500px;
+    margin: 0 auto;
+  }
+
+  .img-container img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
   }
 }
 
 @media (min-width: 1440px){
   .hero-section{
-    padding-top: 8rem;
+    align-items: center;
+    padding: 6rem 10rem ;
     gap: 4rem;
   }
 
@@ -131,12 +183,77 @@ span{
     font-size: 3.6em;
   }
 
-  .hero-buttons{
-    flex-direction: row;
+  .primary-button, .secondary-button{
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 350px;
+    max-height: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1920px){
+  .hero-section{
+    padding: 6rem 10rem ;
+    gap: 4rem;
+  }
+
+  .hero-up-title{
+    font-size: 4.4rem;
+  }
+
+  .hero-title{
+    font-size: 7.4rem;
+  }
+
+  .hero-subtitle{
+    font-size: 4.6em;
   }
 
   .primary-button, .secondary-button{
     padding: 1rem 1.5rem;
     font-size: 1.3rem;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 450px;
+    max-height: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 2560px){
+  .hero-section{
+    padding: 10rem;
+    gap: 4rem;
+  }
+
+  .hero-up-title{
+    font-size: 6.4rem;
+  }
+
+  .hero-title{
+    font-size: 10.4rem;
+  }
+
+  .hero-subtitle{
+    font-size: 6.6em;
+  }
+
+  .primary-button, .secondary-button{
+    padding: 2rem 2.5rem;
+    font-size: 1.3rem;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 650px;
+    max-height: 800px;
+    margin: 0 auto;
   }
 }

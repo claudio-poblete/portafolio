@@ -1,8 +1,14 @@
 .footer{
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 8rem;
   padding: 2rem 1rem;
   background-color: #333333;
   color: #FFFFFF;
+}
+
+@media (min-width: 1024px){
+  .footer{
+    margin-top: 2rem;
+  }
 }

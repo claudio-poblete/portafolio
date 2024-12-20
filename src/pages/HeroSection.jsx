@@ -22,7 +22,7 @@ const HeroSection = () => {
         </div>
       </header>
       <main className='img-container'>
-        <img src='/path-to-image.jpg' alt='Claudio Poblete trabajando en un proyecto' />
+        <img src='/images/me.jpg' alt='Claudio Poblete trabajando en un proyecto' />
       </main>
     </section>
   )
