@@ -22,7 +22,7 @@
 
 .logo:hover,
 .links:hover {
-  color: #777777;
+  color: #007BFF;
   transition: ease-in 0.4s;
 }
 
@@ -31,7 +31,7 @@
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  width: 100%;
 }
 
 .links-container.show-menu {
@@ -60,7 +60,7 @@ li {
 }
 
 .link-cv:hover {
-  background-color: #777777;
+  background-color: #007BFF;
   transition: ease-in 0.4s;
 }
 
@@ -71,9 +71,9 @@ li {
   color: #333333;
   font-size: 1.8rem;
   cursor: pointer;
-  align-self: center; /* Alineado verticalmente con el logo */
-  margin-left: auto;  /* Empuja el botón a la derecha */
-  position: relative; /* Añadido para mejorar la alineación */
+  align-self: center;
+  margin-left: auto;
+  position: relative;
 }
 
 .hamburger-menu:focus {

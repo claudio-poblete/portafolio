@@ -42,12 +42,13 @@ const Footer = () => {
         </nav>
         <div className='footer-personal-info'>
           <p>Claudio Poblete Lagos</p>
-          <p>Desarrollador Fullstack</p>
+          <p>Transformando ideas en soluciones tecnológicas.</p>
+          <p>Hablemos de tu próximo proyecto.</p>
         </div>
 
       </section>
       <section className='footer-rights'>
-        <p className='footer-rights-text'>© 2024 Claudio Poblete Lagos. Todos los derechos reservados.</p>
+        <p className='footer-rights-text'>© 2024. Todos los derechos reservados.</p>
         <p>Diseñado y desarrollado por <a href='https://github.com/claudio-poblete' target='_blank' rel='noopener noreferrer' className='footer-credit-link'>Claudio Poblete Lagos</a>.</p>
       </section>
     </footer>

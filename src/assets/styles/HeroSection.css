@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 8rem;
   gap: 2rem;
 }
 
@@ -34,11 +34,11 @@
 
 .hero-subtitle{
   font-size: 1.6rem;
-  color: #333333;
+  color: #007BFF;
 }
 
 span{
-  color: #777777;
+  color: #333333;
 }
 
 .hero-title, .hero-subtitle{
@@ -76,7 +76,7 @@ span{
 }
 
 .primary-button:hover{
-  opacity: 0.8;
+  background-color: #007BFF;
   transition: .4s;
   border: none;
 }

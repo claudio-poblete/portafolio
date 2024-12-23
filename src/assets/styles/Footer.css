@@ -1,14 +1,142 @@
 .footer{
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
+  margin-top: 10rem;
   padding: 2rem 1rem;
   background-color: #333333;
-  color: #FFFFFF;
+  color: #F5F5F5;
+  gap: 2rem;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  padding-bottom: 2rem;
+}
+
+.footer-social-links{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-social-links h5{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.social-links-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #F5F5F5;
+  font-weight: 400;
+  gap: 0.2rem;
+}
+
+.social-link:hover{
+  color: #007BFF;
+  transition: .4s;
+  transform: scale(1.1);
+}
+
+.footer-personal-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-personal-info p{
+  font-weight: 300;
+  font-size: 14px;
+  color: #F5F5F5;
+  line-height: 1.4;
+  margin: 0 0 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.footer-rights{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-credit-link{
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+.footer-credit-link:hover{
+  color: #007BFF;
+  transition: .4s;
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 768px){
+  .footer-content{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer-personal-info p{
+    font-size: 16px;
+    color: #F5F5F5;
+  }
 }
 
 @media (min-width: 1024px){
   .footer{
     margin-top: 2rem;
+  }
+
+  .footer-content{
+    gap: 10rem;
+  }
+}
+
+@media (min-width: 1440px){
+  .footer{
+    margin-top: 4rem;
+  }
+
+  .footer-content{
+    gap: 20rem;
+  }
+
+  .footer-social-links{
+    gap: 2rem;
+  }
+
+  .footer-social-links h5{
+    font-size: 2.2rem;
+  }
+
+  .social-link{
+    font-size: 1.4rem;
+  }
+
+  .footer-personal-info p{
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  .footer-rights p{
+    font-size: 1.2rem;
   }
 }
