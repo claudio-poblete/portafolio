@@ -11,6 +11,11 @@ const Navbar = () => {
     setMenuOpen(!menuOpen)
   }
 
+  const handleLinkClick = () => {
+    setMenuOpen(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <nav className='navbar'>
       <div className='logo-container'>
@@ -27,19 +32,33 @@ const Navbar = () => {
       </button>
       <ul className={`links-container ${menuOpen ? 'show-menu' : ''}`}>
         <li>
-          <Link to='/' className='links'>Inicio</Link>
+          <Link to='/' className='links' onClick={handleLinkClick}>
+            Inicio
+          </Link>
         </li>
         <li>
-          <Link to='/about' className='links'>Sobre Mi</Link>
+          <Link to='/about' className='links' onClick={handleLinkClick}>
+            Sobre Mi
+          </Link>
         </li>
         <li>
-          <Link to='/projects' className='links'>Mis Proyectos</Link>
+          <Link to='/projects' className='links' onClick={handleLinkClick}>
+            Mis Proyectos
+          </Link>
         </li>
         <li>
-          <Link to='/contact' className='links'>Contáctame</Link>
+          <Link to='/contact' className='links' onClick={handleLinkClick}>
+            Contáctame
+          </Link>
         </li>
         <li className='cv-button-container'>
-          <a href='/docs/CV Claudio Poblete - Dev Fullstack.pdf' className='link-cv' target='_blank' rel='noopener noreferrer'>
+          <a
+            href='/docs/CV Claudio Poblete - Dev Fullstack.pdf'
+            className='link-cv'
+            target='_blank'
+            rel='noopener noreferrer'
+            onClick={handleLinkClick}
+          >
             Mi CV
           </a>
         </li>

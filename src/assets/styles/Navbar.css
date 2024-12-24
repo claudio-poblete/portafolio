@@ -6,6 +6,11 @@
   padding: 1rem;
   gap: 1rem;
   background-color: #F5F5F5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo,
@@ -102,8 +107,13 @@ li {
     all: unset;
   }
 
+  .links {
+    font-size: 1.1rem;
+  }
+
   .link-cv {
-    padding: 1rem 4rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 3rem;
   }
 }
 
@@ -111,5 +121,51 @@ li {
   .logo,
   .links {
     letter-spacing: 1.5px;
+  }
+
+  .links {
+    font-size: 1.3rem;
+  }
+
+  .link-cv {
+    font-size: 1.3rem;
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media (min-width: 1920px){
+  .navbar{
+    padding: 1.6rem;
+  }
+
+  .logo{
+    font-size: 2rem;
+  }
+
+  .links {
+    font-size: 1.5rem;
+  }
+
+  .link-cv {
+    font-size: 1.5rem;
+    padding: 0.8rem 4rem;
+  }
+}
+
+@media (min-width: 2560px){
+  .navbar{
+    padding: 3rem;
+  }
+  .logo{
+    font-size: 3rem;
+  }
+
+  .links {
+    font-size: 2.2rem;
+  }
+
+  .link-cv {
+    font-size: 2.2rem;
+    padding: 1rem 6rem;
   }
 }

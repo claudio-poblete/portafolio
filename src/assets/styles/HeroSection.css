@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 10rem;
   gap: 2rem;
 }
 
@@ -65,7 +65,7 @@ span{
 }
 
 .primary-button{
-  background-color: #333333;
+  background-color: #007BFF;
   color: #FFFFFF;
   border: none;
 }
@@ -76,7 +76,7 @@ span{
 }
 
 .primary-button:hover{
-  background-color: #007BFF;
+  background-color: #333333;
   transition: .4s;
   border: none;
 }
@@ -109,7 +109,7 @@ span{
   .hero-section{
     flex-direction: row;
     justify-content: center;
-    padding-top: 6rem;
+    padding-top: 10rem;
   }
 
   .hero-up-title{
@@ -132,7 +132,7 @@ span{
 @media (min-width: 1024px){
   .hero-section{
     align-items: center;
-    padding: 6rem 4rem ;
+    padding: 10rem 4rem ;
     gap: 2rem;
   }
 
@@ -160,14 +160,14 @@ span{
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50% 50%;
   }
 }
 
 @media (min-width: 1440px){
   .hero-section{
     align-items: center;
-    padding: 6rem 10rem ;
+    padding: 10rem 10rem ;
     gap: 4rem;
   }
 
@@ -198,7 +198,7 @@ span{
 
 @media (min-width: 1920px){
   .hero-section{
-    padding: 6rem 10rem ;
+    padding: 10rem 10rem ;
     gap: 4rem;
   }
 
@@ -229,7 +229,7 @@ span{
 
 @media (min-width: 2560px){
   .hero-section{
-    padding: 10rem;
+    padding: 15rem;
     gap: 4rem;
   }
 
