@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import '../assets/styles/Navbar.css'
+import '../assets/styles/components/Navbar.css'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)

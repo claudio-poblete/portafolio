@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import '../assets/styles/Footer.css'
+import '../assets/styles/components/Footer.css'
 
 const Footer = () => {
   return (
