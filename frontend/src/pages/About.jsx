@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3Alt, faJs, faReact, faBootstrap, faNodeJs, faGit } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase, faServer, faKey, faToolbox } from '@fortawesome/free-solid-svg-icons'
-import '../assets/styles/About.css'
+import '../assets/styles/pages/About.css'
 
 const About = () => {
   return (

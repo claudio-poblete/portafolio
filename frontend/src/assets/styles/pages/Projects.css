@@ -1,0 +1,13 @@
+.projects-section{
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 2rem 0;
+  gap: 2rem;
+}
+
+.section-title{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333333;
+}
