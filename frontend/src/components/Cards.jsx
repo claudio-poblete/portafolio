@@ -1,6 +1,7 @@
-import { Fontawesome } from '@fortawesome/react-fontawesome'
+/* eslint-disable react/prop-types */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase, faServer } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, faServer, faCode } from '@fortawesome/free-solid-svg-icons'
 import '../assets/styles/components/Cards.css'
 
 const Cards = ( {img, title, description, skills, url}) => {
@@ -29,12 +30,12 @@ const Cards = ( {img, title, description, skills, url}) => {
         <div className="skills-container">
           <h5 className="skills-title">Tecnologias utilizadas:</h5>
           <div className="skills-list">
-            {skills.map((skill, index) => (
-              <span key={index} className="skill">
+            {skills.map((skill) => (
+              <span key={skill} className="skill">
                 {skillIcons[skill] ? (
-                  <Fontawesome icon={skillIcons[skill]} className="skill-icon" />
+                  <FontAwesomeIcon icon={skillIcons[skill]} className="skill-icon" />
                 ) : (
-                  <Fontawesome icon={faCode} className="skill-icon" />
+                  <FontAwesomeIcon icon={faCode} className="skill-icon" />
                 )}{' '}
                  {skill}
               </span>

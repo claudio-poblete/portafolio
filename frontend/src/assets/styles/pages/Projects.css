@@ -1,13 +1,25 @@
 .projects-section{
   display: flex;
   flex-direction: column;
-  padding: 8rem 2rem 0;
-  gap: 2rem;
+  padding: 8rem 1.5rem 0;
+  gap: 3rem;
 }
 
 .section-title{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
   color: #333333;
+}
+
+.projects-list{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px){
+  .projects-list{
+    flex-direction: row;
+  }
 }

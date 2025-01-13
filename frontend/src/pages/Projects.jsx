@@ -13,9 +13,9 @@ const Projects = () => {
       <main className="projects-container">
         <ul className="projects-list">
           {proyectos.map((proyecto) => (
-            <Cards key={proyecto.id} 
+            <Cards key={proyecto.id}
               img={proyecto.img}
-              title={proyecto.title}
+              title={proyecto.name}
               description={proyecto.description}
               skills={proyecto.skills}
               url={proyecto.url}
